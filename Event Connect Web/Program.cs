@@ -25,6 +25,10 @@ app.UseRouting();
 
 app.UseAuthorization();
 
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Event}/{action=Index}/{id?}");
+
 app.MapRazorPages();
 
 app.Run();
