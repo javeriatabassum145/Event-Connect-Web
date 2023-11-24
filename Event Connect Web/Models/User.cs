@@ -4,8 +4,7 @@ namespace Event_Connect_Web.Models
 {
     public class User
     {
-        [Required]
-        public int UserID { get; set; }
+        public int? UserID { get; set; }
         [Required]
         public string? Name { get; set; }
         [Required]
