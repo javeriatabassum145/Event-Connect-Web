@@ -3,14 +3,84 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Event_Connect_Web</title>
+    <title>Event Connect</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/Event_Connect_Web.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/styles.css" asp-append-version="true" />
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+      <header>
+    <nav class="navbar">
+            <div class="logo"><img src="~/img/logo.png"></div>
+      <ul class="menu">
+        <li><a href="/">Home</a></li>
+        <li><a href="#">Latest</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="buttons">
+        <input type="button" value="Login">
+        <input type="button" value="Register">
+      </div>
+    </nav>
+        <div class="text-img-flex">
+    <div class="text-content">
+            <h2>Discover Seamless Connections with <br/><strong>Event Connect</strong></h2>
+            <br />
+            <h5>Unite moments, forge bonds. 
+                <br />
+                <br />
+                </h5>
+                <p>
+                Event Connect, where every connection becomes an event. 🚀
+            <br />
+                Transform every interaction into a memorable experience.  🌟
+                <br />
+                Dive into a world of meaningful interactions, one click away. 🌐
+            </p>
+    </div>
+   <div class="play-button">
+            <img src="~/img/eventconnect.png" alt="Event Connect" class="play-image">
+    </div>
+        </div>
+  </header>
+
+
+    @* <header> *@
+@*         <!-- Main -->
+        <section id="main">
+            <!-- Glass Box -->
+            <div class="main-box">
+                <!-- Navbar -->
+                <nav>
+                    <ul>
+                        <li><a href="#" class="logo">Taste</a></li>
+                        <li><i class='bx bxs-cart-alt'></i></li>
+                    </ul>
+                </nav>
+                <!-- Main Content -->
+                <div class="main-content">
+                    <!-- Main Text -->
+                    <div class="main-text">
+                        <h1>Delicious <br>Food</h1>
+                        <h2>For Healthy Life</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing<br> elit. Sint voluptas distinctio perspiciatis aspernatur.</p>
+                        <!-- Buttons -->
+                        <a href="#" class="btn1">View Menu</a>
+                        <a href="#" class="btn2">Book A Table</a>
+                    </div>
+                    <!-- Image -->
+                    <div class="main-img">
+                        <img src="images/food.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- circles -->
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+ *@
+
+@*         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
                 <a class="navbar-brand" asp-area="" asp-page="/Index">Event_Connect_Web</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -29,7 +99,7 @@
                 </div>
             </div>
         </nav>
-    </header>
+    </header> *@
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
@@ -38,7 +108,7 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2023 - Event_Connect_Web - <a asp-area="" asp-page="/Privacy">Privacy</a>
+            &copy; 2023 - Event Connect
         </div>
     </footer>
 
