@@ -17,10 +17,21 @@
         <li><a href="#">Latest</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
-      <div class="buttons">
-        <input type="button" value="Login">
-        <input type="button" value="Register">
-      </div>
+            @if (User.Identity.IsAuthenticated)
+            {
+                <div class="buttons">
+                    <input type="button" value="Welcome, @User.Identity.Name!" disabled>
+                    <a asp-controller="Account" asp-action="Logout"><input type="button" value="Logout"></a>
+                </div>
+            }
+            else
+            {
+                <div class="buttons">
+                    <a asp-controller="Account" asp-action="Login"><input type="button" value="Login"></a>
+                    <a asp-controller="Account" asp-action="Register"><input type="button" value="Register"></a>
+                </div>
+            }
+            
     </nav>
         <div class="text-img-flex">
     <div class="text-content">
